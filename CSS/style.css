@@ -1,0 +1,232 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+  	font-family: 'Dancing Script', cursive;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
+
+.bg-img { 
+	display: block;
+	width: 100%;
+	min-height: 100%;
+	background: url('img/IMG_0729.PNG') no-repeat 50% 50%;
+	background-size: cover;
+	z-index: -1;
+}
+ 
+.nav {
+	background-color: #a1271f;
+	width: 100%;
+	height: 2rem;
+}
+
+.nav-link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ 	line-height: 1.3rem;
+}
+
+.nav-link li {
+	display: inline-block;
+	margin-top: 0.2rem;
+}
+
+.nav-link li a {
+  	padding: 0.5rem;
+	font-size: 0.7rem;
+	text-decoration: none;
+	textx-transform: uppercase;
+}
+
+.nav-link li a:hover {
+	border-bottom: 1px solid cream;
+}
+
+.main-content {
+	display:flex;
+	height: 100vh;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	margin: auto auto;
+}
+
+.business-name {
+	font-size: 8rem;
+}
+
+.slogan {
+	font-size: 1.5rem;
+	margin-top: -1rem;
+}
+
+.business-name, .slogan, .music-btn {
+	display: absolute;
+	text-align: center;
+}
+
+.btn {
+	display: block;
+	height: 2.3rem;
+	width: 4rem;
+	background-color: blue;
+	border-radius: 0.5rem;
+ 	outline: none;
+	border: none;
+}
+
+.btn a {
+ 	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.music-btn {
+ 	background: #a1271f;
+	margin-top: 0.6rem;
+	text-transform: capitalize;
+	padding: 0.3rem;
+	animation: appear 3s linear 1s;
+}
+
+@keyframes appear {
+	0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.music-btn:hover {
+	background: #333;
+}
+
+/* About */
+.content-header {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.about-img {
+	background: url("img/IMG_0693.JPG") no-repeat center 95%;
+	float: left;
+	height: 10rem;
+   width: 10rem;
+   margin: 0.9rem;
+	border: none;
+	border-radius: 50%;
+	background-size: cover;
+	
+}
+
+.about-us {
+	margin: 1rem;
+}
+
+.content {
+	height: 100%;
+}
+
+.content p {
+	text-indent: 0.6rem;
+	font-size: 1.1rem;
+	margin-bottom: 1.3rem;
+}
+
+/* Lessons */
+.lessons {
+	margin-left: 1rem;
+}
+
+.lessons p {
+	margin-top: 1.4rem;
+	font-size: 1rem;
+}
+
+.lesson-title {
+	font-size: 2.1rem;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+	
+}
+
+.lesson-title:after {
+	content: ""; /* This is necessary for the pseudo element to work. */ 
+   display: block; /* This will put the pseudo element on its own line. */
+	width: 10%; /* Change this to whatever width you want. */
+	border-bottom: 1px dashed #a1271f;
+	border-bottom-width: thick;
+}
+
+.lesson-container {
+	display: flex;
+	align-content: space evenly;
+	border-bottom: 1px solid #fff;
+	margin-botom: 1rem;
+}
+
+.lesson-container:last-child {
+	border-bottom: none;
+}
+
+.lesson-prices {
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-between;
+	float: right;
+	width: 100%;
+	overflow: auto;
+}
+
+.lesson-prices::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.lesson-price {
+	margin: 2rem 90%;
+	font-size: 0.9rem;
+}
+
+.lesson-topics, .lesson-desc {
+	text-align: center;
+	margin: auto;
+}
+
+.lesson-topics {
+	float: left;
+	width: 70%;
+	margin-top: 0.3rem;
+	font-size: 1.4rem;
+	text-transform: capitalize;
+}
+
+.lesson-desc {
+	display: absolute;
+	font-size: 1.3rem;
+	list-style: none;
+	text-indent: 0.5rem;
+	margin: auto 0;
+}
+
