@@ -49,7 +49,7 @@ html, body {
   	padding: 0.5rem;
 	font-size: 0.7rem;
 	text-decoration: none;
-	textx-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .nav-link li a:hover {
@@ -76,7 +76,7 @@ html, body {
 }
 
 .business-name, .slogan, .music-btn {
-	display: absolute;
+	position: absolute;
 	text-align: center;
 }
 
@@ -180,9 +180,9 @@ html, body {
 
 .lesson-container {
 	display: flex;
-	align-content: space evenly;
+  justify-content: center;
 	border-bottom: 1px solid #fff;
-	margin-botom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .lesson-container:last-child {
@@ -223,7 +223,6 @@ html, body {
 }
 
 .lesson-desc {
-	display: absolute;
 	font-size: 1.3rem;
 	list-style: none;
 	text-indent: 0.5rem;
