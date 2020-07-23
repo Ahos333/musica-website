@@ -1,9 +1,13 @@
+/* Set Up */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: "monteserrat", sans-serif;
+	overflow-x: hidden;
 	color: #fff;
-  	font-family: 'Dancing Script', cursive;
 }
 
 html, body {
@@ -11,18 +15,19 @@ html, body {
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 .bg-img { 
 	display: block;
 	width: 100%;
 	min-height: 100%;
-	background: url('IMG_0729.PNG') no-repeat 50% 50%;
+	background: url("../bg-img.jpg") no-repeat 50% 50%;
 	background-size: cover;
 	z-index: -1;
 }
- 
+
+/* Landing Page */  
 .nav {
 	background-color: #a1271f;
 	width: 100%;
@@ -76,15 +81,18 @@ html, body {
 }
 
 .business-name, .slogan, .music-btn {
-	position: absolute;
+	display: absolute;
 	text-align: center;
+}
+
+.music-btn {
+	margin-top: 1rem;
 }
 
 .btn {
 	display: block;
-	height: 2.3rem;
-	width: 4rem;
-	background-color: blue;
+	width: 80px;
+	height: 50px;
 	border-radius: 0.5rem;
  	outline: none;
 	border: none;
@@ -93,14 +101,11 @@ html, body {
 .btn a {
  	text-decoration: none;
 	text-transform: uppercase;
-	text-align: center;
 }
 
 .music-btn {
  	background: #a1271f;
-	margin-top: 0.6rem;
 	text-transform: capitalize;
-	padding: 0.3rem;
 	animation: appear 3s linear 1s;
 }
 
@@ -116,10 +121,10 @@ html, body {
   }
 }
 
-
 .music-btn:hover {
-	background: #333;
+	opacity: 0.9;
 }
+
 
 /* About */
 .content-header {
@@ -128,7 +133,7 @@ html, body {
 }
 
 .about-img {
-	background: url("IMG_0693.JPG") no-repeat center 95%;
+	background: url("../about-img.jpg") no-repeat center 95%;
 	float: left;
 	height: 10rem;
    width: 10rem;
@@ -149,9 +154,10 @@ html, body {
 
 .content p {
 	text-indent: 0.6rem;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	margin-bottom: 1.3rem;
 }
+
 
 /* Lessons */
 .lessons {
@@ -171,28 +177,36 @@ html, body {
 }
 
 .lesson-title:after {
-	content: ""; /* This is necessary for the pseudo element to work. */ 
-   display: block; /* This will put the pseudo element on its own line. */
-	width: 10%; /* Change this to whatever width you want. */
+	content: ""; 
+   display: block; 
+	width: 10%; 
 	border-bottom: 1px dashed #a1271f;
 	border-bottom-width: thick;
 }
 
 .lesson-container {
 	display: flex;
-  justify-content: center;
+	justify-content: center;
 	border-bottom: 1px solid #fff;
-	margin-bottom: 1rem;
+	margin-botom: 1rem;
 }
 
 .lesson-container:last-child {
 	border-bottom: none;
 }
 
+.section-left {
+ 	float: left;
+}
+
+.section-right {
+	float: right;
+}
+
 .lesson-prices {
 	display: flex; 
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-end;
 	float: right;
 	width: 100%;
 	overflow: auto;
@@ -223,9 +237,14 @@ html, body {
 }
 
 .lesson-desc {
+	display: absolute;
 	font-size: 1.3rem;
 	list-style: none;
 	text-indent: 0.5rem;
-	margin: auto 0;
+	margin: 0 auto;
 }
 
+
+/* This is necessary for the pseudo element to work. */ 
+/* This will put the pseudo element on its own line. */
+/* Change this to whatever width you want. */
