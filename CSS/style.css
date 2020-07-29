@@ -12,11 +12,6 @@
 	color: #fff;
 }
 
-/*  
-
-	 "monteserrat", sans-serif;
-*/
-
 html, body {
 	margin: 0;
 	padding: 0;
@@ -147,8 +142,7 @@ html, body {
    margin: 0.9rem;
 	border: none;
 	border-radius: 50%;
-	background-size: cover;
-	
+	background-size: cover;	
 }
 
 .about-us {
@@ -159,13 +153,159 @@ html, body {
 	height: 100%;
 }
 
-.content p {
+.about-us p span {
+	font-size: 2rem;
+	text-weight: bolder;
+}
+
+.about-us p {
 	text-indent: 0.6rem;
 	font-size: 1rem;
 	margin-bottom: 1.3rem;
 }
 
+.contact-section {
+	margin-left: 200px;
+}
 
+.contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100vw - 30%);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5rem;
+	padding: 0.5rem 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+	padding: 0.5rem;
+}
+
+.contact-form input {
+	width: 50%;
+	height: 30px;
+	border: none;
+	outline: none;
+}
+
+.contact-form textarea {
+	width: 100%;
+	height: 200px;
+}
+
+.contact-form textarea[type=text] {
+	border: none;
+	outline: none;
+}
+
+.contact-form input:hover,  .contact-form textarea {
+	border: 1px solid #a1271f;
+}
+
+.contact-form, .contact-info {
+	width: 50%;
+	align-self: center;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea, .contact-info h5, .contact-info span {
+	margin-bottom: 0.5rem;
+}
+
+.contact-info div {
+	display: flex;
+}
+
+.contact-info h5 {
+	font-size: 1rem;
+	margin-left: 0.3rem;
+}
+
+.contact-info h5, .contact-info span {
+	width: 50%;
+	margin-top: 0.5rem;
+}
+
+
+/* Lessons */
+.lessons {
+	margin-left: 1rem;
+	width: calc(100vw - 10%);
+	margin: 0 auto;
+}
+
+.lessons p {
+	margin-top: 1.4rem;
+	margin-bottom: 1.4rem;
+}
+
+.class-title {
+	font-size: 2rem;
+	margin: 0.3rem 0.3rem;
+	text-transform: uppercase;
+	
+}
+
+.class-title:after {
+	content: ""; 
+   display: block; 
+	width: 10%; 
+	border-bottom: 1px dashed #a1271f;
+	border-bottom-width: thick;
+}
+
+.lesson-items {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.lesson-item {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.lesson-title {
+	font-size: 1.5rem;
+}
+
+.lessons p, .lesson-desc, .lesson-price, .schedule-btn {
+	align-self: center;
+	margin: auto;
+}
+
+.lessons p, .lesson-desc, .lesson-price {
+	font-size: 1.3rem;
+	width: 100%;
+	text-align: center;
+}
+
+.lesson-title, .lesson-price, .schedule-btn {
+	flex: 1;
+}
+
+.lesson-desc {
+	flex: 2;
+}
+
+.schedule-btn, .send-btn {
+	width: 100px;
+	height: 50px; 
+	background-color: #a1271f;	
+}
+
+
+
+.lesson-container:last-child {
+	border-bottom: none;
+}
 
 /* <div class="content">
 		<h1 class="content-header">LESSONS</h1>
@@ -182,148 +322,3 @@ html, body {
 		</section>
 	</div> */
 
-/* Lessons */
-.lessons {
-	margin-left: 1rem;
-}
-
-.lessons p {
-	margin-top: 1.4rem;
-}
-
-.lessons p, .lesson-desc, .lesson-price {
-	font-size: 1.3rem;
-	width: 100%;
-}
-
-.class-title {
-	font-size: 2rem;
-	margin-bottom: 0.3rem;
-	text-transform: uppercase;
-	
-}
-
-.class-title:after {
-	content: ""; 
-   display: block; 
-	width: 10%; 
-	border-bottom: 1px dashed #a1271f;
-	border-bottom-width: thick;
-}
-
-.lesson-item {
-	/* 
-	display: grid;
-	grid-auto-rows: 1fr 2fr 1fr 1fr;
-	 */
-	display: flex;
-	justify-content: space-between;
-	margin: auto;
-	
-	border: 1px solid green;
-}
-
-.lesson-title {
-	font-size: 2rem;
-}
-
-.schedule-btn, .send-btn {
-	width: 100px;
-	height: 50px; 
-	background-color: #a1271f;	
-}
-
-.contact {
-	display: flex;
-	width: calc(100vw - 30%);
-	margin: 0 auto;
-}
-
-.contact-form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 0.5rem;
-	padding: 0.5rem 1rem;
-}
-
-.contact-form input {
-	width: 50%;
-	height: 30%;
-	padding: 1rem;
-	border: none;
-	outline: none;
-}
-
-.contact-form input:hover {
-	border-bottom: 1px dashed #a1271f;
-}
-
-.contact-form, .contact-info {
-	align-self: center;
-	width: 50%;
-}
-
-.lesson-container:last-child {
-	border-bottom: none;
-}
-
-
-/* Lessons 
-
-
-
-.section-left {
- 	float: left;
-}
-
-.section-right {
-	float: right;
-}
-
-.lesson-prices {
-	display: flex; 
-	flex-direction: column;
-	justify-content: flex-end;
-	float: right;
-	width: 100%;
-	overflow: auto;
-}
-
-.lesson-prices::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-
-.lesson-price {
-	margin: 2rem 90%;
-	font-size: 0.9rem;
-}
-
-.lesson-topics, .lesson-desc {
-	text-align: center;
-	margin: auto;
-}
-
-.lesson-topics {
-	float: left;
-	width: 70%;
-	margin-top: 0.3rem;
-	font-size: 1.4rem;
-	text-transform: capitalize;
-}
-
-.lesson-desc {
-	display: absolute;
-	font-size: 1.3rem;
-	list-style: none;
-	text-indent: 0.5rem;
-	margin: 0 auto;
-}
-*/
-
-/* This is necessary for the pseudo element to work. */ 
-/* This will put the pseudo element on its own line. */
-/* Change this to whatever width you want. */
