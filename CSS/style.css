@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 /* Set Up */
 * {
 	margin: 0;
@@ -5,10 +7,15 @@
 	box-sizing: border-box;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	font-family: "monteserrat", sans-serif;
+	font-family: 'Dancing Script', cursive; 
 	overflow-x: hidden;
 	color: #fff;
 }
+
+/*  
+
+	 "monteserrat", sans-serif;
+*/
 
 html, body {
 	margin: 0;
@@ -159,6 +166,22 @@ html, body {
 }
 
 
+
+/* <div class="content">
+		<h1 class="content-header">LESSONS</h1>
+		<section class="lessons">
+			<p>Enjoy our private lessons in everything from piano to xlyphone. Lessons range from beginner to expert and last two two to three times a week for eight weeks.</p>
+			<p>For more information or to schedule a music lesson, please contact us at (000)-000-0000 or reach out to us by email at musica@gmail.com.</p>
+			<div class="lesson-items">
+				<h2 class="class-title">Piano</h2>
+				<div class="lesson-item">
+					<h4 class="lesson-title">Learn The Basics</h4>
+					<span class="lesson-desc">learn the basic keys of the piano as well as how to read music notes.</span>
+					<span class="lesson-price">$10</span>
+				</div>
+		</section>
+	</div> */
+
 /* Lessons */
 .lessons {
 	margin-left: 1rem;
@@ -166,17 +189,21 @@ html, body {
 
 .lessons p {
 	margin-top: 1.4rem;
-	font-size: 1rem;
 }
 
-.lesson-title {
-	font-size: 2.1rem;
-	margin-bottom: 0.5rem;
+.lessons p, .lesson-desc, .lesson-price {
+	font-size: 1.3rem;
+	width: 100%;
+}
+
+.class-title {
+	font-size: 2rem;
+	margin-bottom: 0.3rem;
 	text-transform: uppercase;
 	
 }
 
-.lesson-title:after {
+.class-title:after {
 	content: ""; 
    display: block; 
 	width: 10%; 
@@ -184,16 +211,68 @@ html, body {
 	border-bottom-width: thick;
 }
 
-.lesson-container {
+.lesson-item {
+	/* 
+	display: grid;
+	grid-auto-rows: 1fr 2fr 1fr 1fr;
+	 */
 	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	
+	border: 1px solid green;
+}
+
+.lesson-title {
+	font-size: 2rem;
+}
+
+.schedule-btn, .send-btn {
+	width: 100px;
+	height: 50px; 
+	background-color: #a1271f;	
+}
+
+.contact {
+	display: flex;
+	width: calc(100vw - 30%);
+	margin: 0 auto;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	border-bottom: 1px solid #fff;
-	margin-botom: 1rem;
+	align-items: center;
+	margin: 0.5rem;
+	padding: 0.5rem 1rem;
+}
+
+.contact-form input {
+	width: 50%;
+	height: 30%;
+	padding: 1rem;
+	border: none;
+	outline: none;
+}
+
+.contact-form input:hover {
+	border-bottom: 1px dashed #a1271f;
+}
+
+.contact-form, .contact-info {
+	align-self: center;
+	width: 50%;
 }
 
 .lesson-container:last-child {
 	border-bottom: none;
 }
+
+
+/* Lessons 
+
+
 
 .section-left {
  	float: left;
@@ -243,7 +322,7 @@ html, body {
 	text-indent: 0.5rem;
 	margin: 0 auto;
 }
-
+*/
 
 /* This is necessary for the pseudo element to work. */ 
 /* This will put the pseudo element on its own line. */
